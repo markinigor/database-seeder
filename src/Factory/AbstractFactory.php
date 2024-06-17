@@ -193,6 +193,8 @@ abstract class AbstractFactory implements FactoryInterface
      * @param bool|null $cleanHeap Clean the heap after creating entities.
      *
      * @note To change the default value use {@see static::$cleanHeap} property.
+     *
+     * @return TEntity[]
      */
     public function create(?bool $cleanHeap = null): array
     {
@@ -214,6 +216,8 @@ abstract class AbstractFactory implements FactoryInterface
      * @param bool|null $cleanHeap Clean the heap after creating entity. Default value is false.
      *
      * @note To change the default value use {@see static::$cleanHeap} property.
+     *
+     * @return TEntity
      */
     public function createOne(?bool $cleanHeap = null): object
     {
